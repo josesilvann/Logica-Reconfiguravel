@@ -1,0 +1,15 @@
+-- Package sub
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+PACKAGE sub_a_b  IS
+	FUNCTION sub (A, B : INTEGER) RETURN INTEGER;
+END sub_a_b;
+
+PACKAGE BODY sub_a_b IS
+	FUNCTION sub (A, B : INTEGER) RETURN INTEGER IS
+	BEGIN
+		RETURN (A - B);
+	END sub;
+END sub_a_b;
